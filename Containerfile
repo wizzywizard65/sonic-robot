@@ -4,7 +4,7 @@ COPY build_files /
 
 # Base Image
 FROM quay.io/fedora/fedora-silverblue:43
-COPY system_files /
+COPY system_files/etc /etc
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
