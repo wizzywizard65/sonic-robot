@@ -15,7 +15,7 @@ dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-
 
 #Fonts
 
-dnf5 install -y jetbrains-mono-fonts-all
+dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks
 
 #remove firefox
 
