@@ -33,7 +33,7 @@ dnf5 -y install podman-bootc
 dnf5 -y copr disable gmaglione/podman-bootc
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y install uupd
-dnf5 -y disable ublue-os/packages
+dnf5 -y copr disable ublue-os/packages
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
