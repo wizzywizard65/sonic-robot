@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y code cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-selinux cockpit-storaged cockpit-system  
-dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox
+dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
 
 #Fonts
 
@@ -31,9 +31,12 @@ dnf5 -y remove firefox
 dnf5 -y copr enable gmaglione/podman-bootc
 dnf5 -y install podman-bootc
 dnf5 -y copr disable gmaglione/podman-bootc
-
+dnf5 -y enable ublue-os/packages
+dnf5 -y install uupd
+dnf5 -y disable ublue-os/packages
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
 systemctl enable cockpit
 systemctl enable docker.socket
+systemctl enable libvirtd
