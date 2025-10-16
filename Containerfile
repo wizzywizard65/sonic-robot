@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/bluefin-dx:latest
+FROM ghcr.io/ublue-os/bluefin-dx:latest
 #COPY system_files /
 
 ## Other possible base images include:
