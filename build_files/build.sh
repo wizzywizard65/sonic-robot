@@ -10,16 +10,16 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y code cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-selinux cockpit-storaged cockpit-system  
-dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
+dnf5 install -y btop cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-selinux cockpit-storaged cockpit-system  
+#dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
 
 #Fonts
 
-dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop
+#dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop
 
 #remove firefox
 
-dnf5 -y remove firefox
+#dnf5 -y remove firefox
 
 # Use a COPR Example:
 #
@@ -28,15 +28,15 @@ dnf5 -y remove firefox
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y copr enable gmaglione/podman-bootc
-dnf5 -y install podman-bootc
-dnf5 -y copr disable gmaglione/podman-bootc
-dnf5 -y copr enable ublue-os/packages
-dnf5 -y install uupd
+#dnf5 -y copr enable gmaglione/podman-bootc
+#dnf5 -y install podman-bootc
+#dnf5 -y copr disable gmaglione/podman-bootc
+#dnf5 -y copr enable ublue-os/packages
+#dnf5 -y install uupd
 dnf5 -y copr disable ublue-os/packages
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
 systemctl enable cockpit
-systemctl enable docker.socket
-systemctl enable libvirtd
+#systemctl enable docker.socket
+#systemctl enable libvirtd
