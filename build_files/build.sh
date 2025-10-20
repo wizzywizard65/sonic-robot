@@ -12,7 +12,11 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y btop cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-selinux cockpit-storaged cockpit-system  
 dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
-dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop code
+dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop code 
+
+#Gnome extensions
+
+dnf5 install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine
 
 #remove firefox
 
