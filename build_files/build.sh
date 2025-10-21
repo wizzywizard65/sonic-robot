@@ -29,12 +29,10 @@ guest-desktop-agents \
 hardware-support \
 multimedia \
 printing \
-virtualization \
-workstation-product \
 ; dnf5 -y clean all
 
-dnf5 install -y fedora-release-ostree-desktop
-dnf5 -y clean all
+#dnf5 install -y fedora-release-ostree-desktop
+#dnf5 -y clean all
 #remove firefox
 
 dnf5 -y remove firefox
