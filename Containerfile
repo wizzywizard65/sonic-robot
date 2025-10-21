@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/fedora-bootc:43
+FROM quay.io/fedora/fedora-silverblue:43
 COPY system_files /
 RUN mkdir -p /var/roothome
 
