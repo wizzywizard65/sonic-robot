@@ -28,7 +28,7 @@ guest-desktop-agents \
 hardware-support \
 multimedia \
 printing \
-virualization \
+virtualization \
 workstation-product \
 ; dnf5 -y clean all
 
