@@ -14,6 +14,7 @@ dnf5 install -y btop cockpit cockpit-bridge cockpit-machines cockpit-networkmana
 dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
 dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop code neovim bash-completion bcc-tools gnome-tweaks strace tmate
 
+dnf5 -y clean all
 #Gnome extensions
 
 dnf5 install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine
