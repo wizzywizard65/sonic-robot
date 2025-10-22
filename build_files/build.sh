@@ -17,7 +17,7 @@ dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks btop code neovim bash-comp
 dnf5 -y clean all
 #Gnome extensions
 
-dnf5 install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine
+dnf5 install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine gnome-shell-extension-appindicator 
 
 
 #dnf5 install -y fedora-release-ostree-desktop
