@@ -41,7 +41,7 @@ dnf5 -y clean all
 #remove firefox
 
 dnf5 -y remove firefox
-
+dnf5 -y remove bazaar
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
