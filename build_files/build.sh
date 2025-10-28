@@ -15,7 +15,7 @@ set -ouex pipefail
 
 
 # this installs a package from fedora repos
-dnf5 install -y btop neovim 
+dnf5 install -y btop neovim gnome-software gnome-software-rpm-ostree 
 #dnf5 install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
 #dnf5 install -y jetbrains-mono-fonts-all gnome-tweaks code neovim bash-completion bcc-tools strace tmate
 
