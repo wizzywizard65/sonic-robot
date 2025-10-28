@@ -59,6 +59,6 @@ dnf5 -y remove firefox
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl enable cockpit.socket
+#systemctl enable cockpit.socket
 #systemctl enable docker.socket
 #systemctl enable libvirtd
