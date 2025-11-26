@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/centos-bootc/centos-bootc:stream10
+FROM quay.io/fedora/fedora-silverblue
 COPY system_files /
 RUN mkdir -p /var/roothome
 #RUN dnf5 update -y
